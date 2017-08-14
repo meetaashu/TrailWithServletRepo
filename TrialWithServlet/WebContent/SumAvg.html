@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+function calSum(){
+	fn=document.getElementById("fn").value;
+	alert('fn is::'+fn);
+	sn=document.getElementById("sn").value;
+	tn=document.getElementById("tn").value;
+	s=+fn + +sn + +tn;
+	document.getElementById("res").value=s;
+}
+function calAvg(){
+	fn=document.calForm.fn.value;
+	sn=document.calForm.sn.value;
+	tn=document.calForm.tn.value;
+	s=+fn + +sn + +tn;
+	a=s/3;
+	document.calForm.res.value=a;
+	//document.getElementById("resText").innerHTML="Yash";
+	document.calForm.resText.innerHTML="Yash";
+}
+</script>
+</head>
+<body>
+<form action="" name="calForm">
+<table>
+<tr>
+<td>First No</td><td><input type="text" name="fn" id="fn"></td> 
+</tr>
+<tr>
+<td>Second No</td><td><input type="text" name="sn" id="sn"></td> 
+</tr>
+<tr>
+<td>Third No</td><td><input type="text" name="tn" id="tn"></td> 
+</tr>
+<tr>
+<td id="resText">Result</td><td><input type="text" name="res" id="res"></td> 
+</tr>
+
+<tr>
+<td><input type="button" name="Sum" value="Sum" onclick="calSum()"></td> 
+</tr>
+<tr>
+<td><input type="button" name="Avg" value="Avg" onclick="calAvg()"></td> 
+</tr>
+
+</table>
+</form>
+</body>
+</html>

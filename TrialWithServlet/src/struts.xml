@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  
+Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd"> 
+<!-- <struts>
+<package name="default" extends="struts-default">
+<action name="product" class="Domain_Package.product">
+<result name="Success">welcome.jsp</result>
+</action>
+</package>
+</struts> 
+<struts>
+
+<package name="default" extends="struts-default">
+<action name="RegisterAction" class="Domain_Package.RegisterAction">
+<result name="Success">WelcomeValidation.jsp</result>
+<result name="input">inputValidation.jsp</result>
+</action>
+</package>
+</struts>-->
+
+<!--<struts>
+<constant name="struts.devMode" value="true" />
+<package name="default" extends="struts-default">
+<action name="Registration" class="Domain_Package.Registration">
+<result name="error">Student-error.jsp</result>
+<result name="success">Student-success.jsp</result>
+
+</action>
+</package>
+</struts>-->
+
+<struts>
+<constant name="struts.devMode" value="true" />
+<package name="default" extends="struts-default">
+<action name="Mail" class="Domain_Package.Mail">
+<result name="success">SpringSingletonSuccess.jsp</result>
+</action>
+</package>
+</struts>

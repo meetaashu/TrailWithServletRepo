@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="add.java" name="calForm" method="get">
+<table>
+<tr>
+<td>First No</td><td><input type="text" name="fn" id="fn"></td> 
+</tr>
+<tr>
+<td>Second No</td><td><input type="text" name="sn" id="sn"></td> 
+</tr>
+<tr>
+<td>Third No</td><td><input type="text" name="tn" id="tn"></td> 
+</tr>
+<tr>
+<td colspan="2"><input type="button" name="Sum" value="Sum"></td> 
+</tr>
+
+</table>
+
+<p> The result is : <% request.getAttribute("result") %></p>
+</form>
+
+
+</body>
+</html>
